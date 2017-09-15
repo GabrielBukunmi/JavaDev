@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/user_image_header"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:layout_marginStart="10dp"
+        android:text="@string/username"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@id/user_image_header"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:textSize="30sp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/header"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:id="@+id/githublink"
+        android:text="@string/github_profile_link"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@id/username"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/githublink"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#880e4f"
+        android:layout_gravity="bottom"
+        android:layout_below="@id/link"/>
+
+</RelativeLayout>
